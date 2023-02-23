@@ -79,3 +79,23 @@ Select src/test folder and mark as `Tests`
 Add a `Module Dependency` for `beast2` and the BeastFX library, setting `Scope` to `Compile`.
 
 ![image](https://user-images.githubusercontent.com/52638982/220793088-12622f77-4fcc-486a-8c9a-dff8f1236d5c.png)
+
+## Beauti debug
+
+In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beauti` and select `Beauti`.
+
+Right click `Beauti` and select `Modify Run Configuration`. 
+
+![image](https://user-images.githubusercontent.com/52638982/220799073-0f28c854-5fde-4c39-96ae-345b14cc8444.png)
+
+To run `Beauti`, `Run > Debug > Beauti`.
+
+## beastMCMC debug
+
+In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beast` and select `BeastMCMC`.
+
+Right click `BeastMCMC` and select `Modify Run Configuration`. 
+
+In `Program Arguments`, locate the xml you wish to run, e.g. `src/testHKY.xml`
+
+![image](https://user-images.githubusercontent.com/52638982/220798869-9984a264-e800-45c5-956e-e2fa3267178f.png)
