@@ -29,10 +29,53 @@ Set the JDK to Zulu 17
 
 ![image](https://user-images.githubusercontent.com/52638982/220517701-6ca74881-ce05-4e8e-bc98-2682ebee69a8.png)
 
-Import the module beast2 by selecting the directory
+Import the module beast2 by selecting the directory, selecting next.
+
+In the Libraries window, edit change 'lib' to 'beast-lib' and untick DensiTree.
 
 `Modules > + > Import Module`
 
-Import BeastFX with the same procedure
+Import BeastFX with the same procedure 
 
 ![image](https://user-images.githubusercontent.com/52638982/220517805-44af65bc-d9a3-45f2-978e-c471ba370566.png)
+
+### Create global libraries for beast2, beast2 junit test, and BeastFX
+ 
+`File > Project Structure > Global Libraries > + > Java`
+
+![image](https://user-images.githubusercontent.com/52638982/220791809-50d939b9-5cdb-4567-9708-14fbb9957360.png)
+
+![image](https://user-images.githubusercontent.com/52638982/220791866-2b020e51-7c17-4b1d-ae36-8c3e3858be5a.png)
+
+![image](https://user-images.githubusercontent.com/52638982/220791714-61746b8f-2f9a-4742-8d42-7b80e83a5ff7.png)
+
+### beast2
+
+`File > Project Structure > Modules > beast2 > Sources`
+
+Select test folder and mark as `Tests`
+
+![image](https://user-images.githubusercontent.com/52638982/220792547-a88afd85-0924-444d-a531-a3180ff5a35f.png)
+
+`File > Project Structure > Modules > beast2 > Dependencies`
+
+Add the beast2 library and beast2 junit test library, setting `Scope` to `Compile`.
+
+`+ > 2 Library > Global Libraries`
+
+![image](https://user-images.githubusercontent.com/52638982/220792674-82b32053-6d07-40d4-8b78-820af9c8a458.png)
+
+
+### BeastFX
+
+`File > Project Structure > Modules > BeastFX > Sources`
+
+Select src/test folder and mark as `Tests`
+
+![image](https://user-images.githubusercontent.com/52638982/220792971-afeb4c6e-ba5b-4b98-a350-9805a8bdaaff.png)
+
+`File > Project Structure > Modules > BeastFX > Dependencies`
+
+Add a `Module Dependency` for `beast2` and the BeastFX library, setting `Scope` to `Compile`.
+
+![image](https://user-images.githubusercontent.com/52638982/220793088-12622f77-4fcc-486a-8c9a-dff8f1236d5c.png)
