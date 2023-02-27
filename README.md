@@ -47,15 +47,15 @@ Select all files under `BeastFX/locallib`
 
 ![image](https://user-images.githubusercontent.com/52638982/221716049-42a22750-354e-47dd-aefd-7e337b361479.png)
 
-![image](https://user-images.githubusercontent.com/52638982/220791809-50d939b9-5cdb-4567-9708-14fbb9957360.png)
+![image](https://user-images.githubusercontent.com/52638982/220791714-61746b8f-2f9a-4742-8d42-7b80e83a5ff7.png)
 
-Select
+Select the `beast2/lib` directory
 
 ![image](https://user-images.githubusercontent.com/52638982/220791866-2b020e51-7c17-4b1d-ae36-8c3e3858be5a.png)
 
-Select
+Select the `beast2/junit` directory
 
-![image](https://user-images.githubusercontent.com/52638982/220791714-61746b8f-2f9a-4742-8d42-7b80e83a5ff7.png)
+![image](https://user-images.githubusercontent.com/52638982/220791809-50d939b9-5cdb-4567-9708-14fbb9957360.png)
 
 ### beast2
 
