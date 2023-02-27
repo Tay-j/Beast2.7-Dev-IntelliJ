@@ -49,6 +49,9 @@ Import BeastFX with the same procedure
 
 ![image](https://user-images.githubusercontent.com/52638982/220791714-61746b8f-2f9a-4742-8d42-7b80e83a5ff7.png)
 
+![image](https://user-images.githubusercontent.com/52638982/221716049-42a22750-354e-47dd-aefd-7e337b361479.png)
+
+
 ### beast2
 
 `File > Project Structure > Modules > beast2 > Sources`
