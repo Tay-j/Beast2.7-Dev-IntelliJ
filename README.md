@@ -24,24 +24,9 @@ Set the JDK to Zulu 17
 
 ![image](https://user-images.githubusercontent.com/52638982/220499283-1814a99e-15e4-43b2-b254-7a93bff2e63b.png)
 
-## Configure modules and dependencies
-`File > Project Structure` or `Ctrl+Alt+Shift+S`
-
-![image](https://user-images.githubusercontent.com/52638982/220517701-6ca74881-ce05-4e8e-bc98-2682ebee69a8.png)
-
-Import the module beast2 by selecting the directory, selecting next.
-
-In the Libraries window, edit change 'lib' to 'beast-lib' and untick DensiTree.
-
-`Modules > + > Import Module`
-
-Import BeastFX with the same procedure 
-
-![image](https://user-images.githubusercontent.com/52638982/220517805-44af65bc-d9a3-45f2-978e-c471ba370566.png)
-
 ### Create global libraries for beast2, beast2 junit test, and BeastFX
  
-`File > Project Structure > Global Libraries > + > Java`
+`File > Project Structure > Global Libraries > + > Java` or `Ctrl+Alt+Shift+S`
 
 Select all files under `BeastFX/locallib`
 
@@ -56,6 +41,22 @@ Select the `beast2/lib` directory
 Select the `beast2/junit` directory
 
 ![image](https://user-images.githubusercontent.com/52638982/220791809-50d939b9-5cdb-4567-9708-14fbb9957360.png)
+
+## Configure modules and dependencies
+
+`File > Project Structure` 
+
+![image](https://user-images.githubusercontent.com/52638982/220517701-6ca74881-ce05-4e8e-bc98-2682ebee69a8.png)
+
+Import the module beast2 by selecting the directory, selecting next.
+
+In the Libraries window, edit change 'lib' to 'beast-lib' and untick DensiTree.
+
+`Modules > + > Import Module`
+
+Import BeastFX with the same procedure 
+
+![image](https://user-images.githubusercontent.com/52638982/220517805-44af65bc-d9a3-45f2-978e-c471ba370566.png)
 
 ### beast2
 
