@@ -114,6 +114,9 @@ Right click `Beauti` and select `Modify Run Configuration`.
 
 To run `Beauti`, `Run > Debug > Beauti`.
 
+![image](https://user-images.githubusercontent.com/52638982/222630065-be606b8d-eaf2-428b-90a9-eb8da74f6f49.png)
+
+
 ## beastMCMC debug
 
 In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beast` and select `BeastMCMC`.
@@ -122,7 +125,9 @@ Right click `BeastMCMC` and select `Modify Run Configuration`.
 
 In `Program Arguments`, locate the xml you wish to run, e.g. `src/testHKY.xml`
 
-![image](https://user-images.githubusercontent.com/52638982/222629355-98e4bab0-0ae3-4148-b8cf-8c848f4e8728.png)
+![image](https://user-images.githubusercontent.com/52638982/222629355-98e4bab0-0ae3-4148-b8cf-8c848f4e8728.png
+
+To run `Beast2`, `Run > Debug > BeastMCMC`.
 
 ## TreeStat
 
@@ -133,3 +138,4 @@ git clone https://github.com/alexeid/TreeStat2
 
 `File > Project Structure > Modules > + > Import Module > TreeStat2`
 
+To run `TreeStat2`, `Run > Debug > TreeStatApp`.
