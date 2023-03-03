@@ -107,6 +107,9 @@ In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beauti` and sel
 
 Right click `Beauti` and select `Modify Run Configuration`. 
 
+![image](https://user-images.githubusercontent.com/52638982/222629839-f38a89a2-75e9-40dc-b26b-845012c83c16.png)
+
+
 ![image](https://user-images.githubusercontent.com/52638982/220799073-0f28c854-5fde-4c39-96ae-345b14cc8444.png)
 
 To run `Beauti`, `Run > Debug > Beauti`.
@@ -127,4 +130,6 @@ In `Program Arguments`, locate the xml you wish to run, e.g. `src/testHKY.xml`
 cd ~/intellij
 git clone https://github.com/alexeid/TreeStat2
 ```
+
+`File > Project Structure > Modules > + > Import Module > TreeStat2`
 
