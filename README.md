@@ -20,6 +20,8 @@ https://www.jetbrains.com/idea/download/
 ## Create Project
 `File > New > Project`
 
+![image](https://user-images.githubusercontent.com/52638982/222627863-14ca2f97-433c-4252-8546-e58a2c488d5b.png)
+
 Set the JDK to Zulu 17
 
 ![image](https://user-images.githubusercontent.com/52638982/220499283-1814a99e-15e4-43b2-b254-7a93bff2e63b.png)
