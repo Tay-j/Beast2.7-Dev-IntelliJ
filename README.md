@@ -42,6 +42,8 @@ Select all files under `BeastFX/locallib`
 
 Rename the library to `b2fx-lib`
 
+![image](https://user-images.githubusercontent.com/52638982/222628356-b41c58f7-eaa5-4c0f-b39f-e7bdfc56c7a1.png)
+
 Select the `beast2/lib` directory
 
 ![image](https://user-images.githubusercontent.com/52638982/220791866-2b020e51-7c17-4b1d-ae36-8c3e3858be5a.png)
