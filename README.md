@@ -32,6 +32,8 @@ Set the JDK to Zulu 17
 
 ![image](https://user-images.githubusercontent.com/52638982/222628023-6442000a-9269-4a91-a8eb-fa9bd2645ff0.png)
 
+![image](https://user-images.githubusercontent.com/52638982/222628784-48577171-6f6f-494d-8c9d-41eb42bd30ba.png)
+
 Select all files under `BeastFX/locallib`
 
 ![image](https://user-images.githubusercontent.com/52638982/221716049-42a22750-354e-47dd-aefd-7e337b361479.png)
