@@ -30,6 +30,8 @@ Set the JDK to Zulu 17
  
 `File > Project Structure > Global Libraries > + > Java` or `Ctrl+Alt+Shift+S`
 
+![image](https://user-images.githubusercontent.com/52638982/222628023-6442000a-9269-4a91-a8eb-fa9bd2645ff0.png)
+
 Select all files under `BeastFX/locallib`
 
 ![image](https://user-images.githubusercontent.com/52638982/221716049-42a22750-354e-47dd-aefd-7e337b361479.png)
@@ -54,13 +56,7 @@ Rename the library to `b2-junit`
 
 `File > Project Structure` 
 
-![image](https://user-images.githubusercontent.com/52638982/222628023-6442000a-9269-4a91-a8eb-fa9bd2645ff0.png)
-
-![image](https://user-images.githubusercontent.com/52638982/222628095-e2184682-180e-4dad-b027-dd709cefab67.png)
-
 ![image](https://user-images.githubusercontent.com/52638982/220517701-6ca74881-ce05-4e8e-bc98-2682ebee69a8.png)
-
-![image](https://user-images.githubusercontent.com/52638982/222628356-b41c58f7-eaa5-4c0f-b39f-e7bdfc56c7a1.png)
 
 Import the module beast2 by selecting the directory, selecting next.
 
