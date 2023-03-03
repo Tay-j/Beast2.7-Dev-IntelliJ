@@ -119,7 +119,7 @@ Right click `BeastMCMC` and select `Modify Run Configuration`.
 
 In `Program Arguments`, locate the xml you wish to run, e.g. `src/testHKY.xml`
 
-![image](https://user-images.githubusercontent.com/52638982/220798869-9984a264-e800-45c5-956e-e2fa3267178f.png)
+![image](https://user-images.githubusercontent.com/52638982/222629355-98e4bab0-0ae3-4148-b8cf-8c848f4e8728.png)
 
 ## TreeStat
 
