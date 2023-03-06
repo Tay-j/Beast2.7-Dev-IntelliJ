@@ -107,8 +107,7 @@ In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beauti` and sel
 
 Right click `Beauti` and select `Modify Run Configuration`. 
 
-![image](https://user-images.githubusercontent.com/52638982/222629839-f38a89a2-75e9-40dc-b26b-845012c83c16.png)
-
+![image](https://user-images.githubusercontent.com/52638982/223002867-23a7039b-8b1e-4480-81b1-f41a3c233860.png)
 
 ![image](https://user-images.githubusercontent.com/52638982/220799073-0f28c854-5fde-4c39-96ae-345b14cc8444.png)
 
