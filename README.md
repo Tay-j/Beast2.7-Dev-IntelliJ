@@ -114,8 +114,7 @@ Right click `Beauti` and select `Modify Run Configuration`.
 
 To run `Beauti`, `Run > Debug > Beauti`.
 
-![image](https://user-images.githubusercontent.com/52638982/222630065-be606b8d-eaf2-428b-90a9-eb8da74f6f49.png)
-
+![image](https://user-images.githubusercontent.com/52638982/223002803-ea996558-a9ac-4009-b866-3e7159414faa.png)
 
 ## beastMCMC debug
 
