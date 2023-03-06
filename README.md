@@ -138,4 +138,6 @@ git clone https://github.com/alexeid/TreeStat2
 
 `File > Project Structure > Modules > + > Import Module > TreeStat2`
 
+![image](https://user-images.githubusercontent.com/52638982/223002633-a24d9ab3-0122-469f-a3b1-bf6eb0726e0b.png)
+
 To run `TreeStat2`, `Run > Debug > TreeStatApp`.
