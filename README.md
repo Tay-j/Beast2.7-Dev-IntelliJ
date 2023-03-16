@@ -13,6 +13,8 @@ Azul JDK 17 (Java 17)
 
 https://www.azul.com/downloads/?version=java-17-lts&package=jdk-fx
 
+This tutorial was set up using version 17.0.6.
+
 IntelliJ IDE (Community Edition)
 
 https://www.jetbrains.com/idea/download/
