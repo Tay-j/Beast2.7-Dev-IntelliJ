@@ -13,7 +13,7 @@ Azul JDK 17 (Java 17)
 
 https://www.azul.com/downloads/?version=java-17-lts&package=jdk-fx
 
-This tutorial was set up using version 17.0.6.
+This tutorial was set up using version 17.0.6. Versions 17.0.4 and 17.0.5 did not work and are not recommended.
 
 IntelliJ IDE (Community Edition)
 
@@ -130,6 +130,8 @@ In `Program Arguments`, locate the xml you wish to run, e.g. `src/testHKY.xml`
 To run `Beast2`, `Run > Debug > BeastMCMC`.
 
 ## TreeStat
+
+Note that the current version of TreeStat2 does not work with non-Mac devices (pending solution).
 
 ```
 cd ~/intellij
