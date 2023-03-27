@@ -117,19 +117,23 @@ To run `Beauti`, `Run > Debug > Beauti`.
 
 ![image](https://user-images.githubusercontent.com/52638982/223002803-ea996558-a9ac-4009-b866-3e7159414faa.png)
 
-## beastMCMC debug
+## BeastMCMC debug
 
 In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beast` and select `BeastMCMC`.
 
 Right click `BeastMCMC` and select `Modify Run Configuration`. 
 
-In `Program Arguments`, locate the xml you wish to run, e.g. `src/testHKY.xml`
+In `Program Arguments`, locate the xml you wish to run, e.g. `beast2/examples/testHKY.xml`
 
 ![image](https://user-images.githubusercontent.com/52638982/222629355-98e4bab0-0ae3-4148-b8cf-8c848f4e8728.png)
 
 To run `Beast2`, `Run > Debug > BeastMCMC`.
 
+Alternatively, use the same debug configuration for `BeastMain`, which will bring up a window where an xml file can be selected. 
+
 ## TreeStat
+
+In this next step we will run a beast2 package, treestat2, that is deployed through a a graphical user interface from the applauncher.
 
 ```
 cd ~/intellij
