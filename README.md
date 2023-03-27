@@ -138,6 +138,10 @@ cd ~/intellij
 git clone https://github.com/alexeid/TreeStat2
 ```
 
+Import the TreeStat2 module and add the beast2 and BeastFX modules as depedencies.
+
+![image](https://user-images.githubusercontent.com/52638982/227849975-bceb9245-274c-4576-8e69-c5aadf84a061.png)
+
 `File > Project Structure > Modules > + > Import Module > TreeStat2`
 
 ![image](https://user-images.githubusercontent.com/52638982/223002719-37a5b7db-7a48-4949-9114-19607a337ad1.png)
