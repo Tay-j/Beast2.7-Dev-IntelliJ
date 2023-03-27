@@ -13,7 +13,7 @@ Azul JDK 17 (Java 17)
 
 https://www.azul.com/downloads/?version=java-17-lts&package=jdk-fx
 
-This tutorial was set up using version 17.0.6.
+This tutorial was set up using version 17.0.6. Versions 17.0.4 and 17.0.5 did not work and are not recommended.
 
 IntelliJ IDE (Community Edition)
 
@@ -134,11 +134,16 @@ Alternatively, use the same debug configuration for `BeastMain`, which will brin
 ## TreeStat
 
 In this next step we will run a beast2 package, treestat2, that is deployed through a a graphical user interface from the applauncher.
+Note that the current version of TreeStat2 does not work with non-Mac devices (pending solution).
 
 ```
 cd ~/intellij
 git clone https://github.com/alexeid/TreeStat2
 ```
+
+Import the TreeStat2 module and add the beast2 and BeastFX modules as depedencies.
+
+![image](https://user-images.githubusercontent.com/52638982/227849975-bceb9245-274c-4576-8e69-c5aadf84a061.png)
 
 `File > Project Structure > Modules > + > Import Module > TreeStat2`
 
