@@ -147,6 +147,8 @@ Right click `src > New > Package`.
 
 ![image](https://user-images.githubusercontent.com/52638982/228110033-4e1d8e1a-ebb6-4cdb-8a32-c6b943a9ba60.png)
 
+### Create F84 class
+
 Right click `beast.base.evolution.substitutionmodel` and create a new `Java Class` called `F84`.
 
 ![image](https://user-images.githubusercontent.com/52638982/228110323-6408a516-959c-46cf-80c9-304800e73d72.png)
@@ -169,11 +171,29 @@ Select the error to declare `F84` and click on the light bulb `Show Quick Fixes`
 
 ![image](https://user-images.githubusercontent.com/52638982/228112101-372b59f1-e973-4b72-946f-0147dce7b196.png)
 
-
+Select `Implement Methods` and click `OK`, adding in unimplemented methods.
 
 ![image](https://user-images.githubusercontent.com/52638982/228112241-7c5f91ff-d1f3-4b2c-9600-b72c453f1700.png)
 
 ![image](https://user-images.githubusercontent.com/52638982/228112321-7b7b7c32-2b9d-4189-84f1-51c673adb934.png)
+
+The `F84.java` file should now look like this
+
+![image](https://user-images.githubusercontent.com/52638982/228112981-81c70bcc-59c5-424d-89d3-0b7de462f47e.png)
+
+### Add k parameter
+
+Add the `extends SubstitutionModel.Base` after the class name.
+
+```
+public class F84 extends SubstitutionModel.Base{
+
+    public Input<RealParameter> kF84 = new Input<RealParameter>("kF84", "k parameter in the F84 model", Validate.REQUIRED);
+```
+
+To resolve the errors, `Import Class` for each unimplemented method.
+
+![image](https://user-images.githubusercontent.com/52638982/228113403-7b8260a6-39ac-4c2a-8359-78f7e3f21e54.png)
 
 
 
