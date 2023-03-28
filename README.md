@@ -66,6 +66,8 @@ Import the module beast2 by selecting the directory, selecting next.
 
 In the Libraries window, edit change 'lib' to 'beast-lib' and untick DensiTree.
 
+![image](https://user-images.githubusercontent.com/52638982/228098503-93a9c877-4beb-407f-a36a-060057276d31.png)
+
 `Modules > + > Import Module`
 
 Import BeastFX with the same procedure 
