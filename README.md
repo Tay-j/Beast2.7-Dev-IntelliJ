@@ -141,6 +141,15 @@ Alternatively, use the same debug configuration for `BeastMain`, which will brin
 
 We are implementing the F84 substitution model.
 
+Create a new `Package` called `beast.base.evolution.substitutionmodel`.
+
+Right click `src > New > Package`.
+
+![image](https://user-images.githubusercontent.com/52638982/228110033-4e1d8e1a-ebb6-4cdb-8a32-c6b943a9ba60.png)
+
+Right click `beast.base.evolution.substitutionmodel` and create a new `Java Class` called `F84`.
+
+![image](https://user-images.githubusercontent.com/52638982/228110323-6408a516-959c-46cf-80c9-304800e73d72.png)
 
 
 ## TreeStat
