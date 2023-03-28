@@ -268,16 +268,19 @@ public void getTransitionProbabilities(Node node, double fStartTime, double fEnd
 ```
 ### Add description and citation
 
-Paste the following line before the `F84` class:
+Paste the following lines before the `F84` class:
 
 ```
 @Description("F84 substitution model")
+
+@Citation("Kishino, H., and M. Hasegawa. 1989. Evaluation of the maximum likelihood estimate of the evolutionary tree topologies from DNA sequence data, and the branching order in Hominoidea. Journal of Molecular Evolution 29:170-179.")
 ```
 
 Import the `Description` class from `beast.base.core`.
 
 ![image](https://user-images.githubusercontent.com/52638982/228114673-7a00e519-6536-49a2-8508-857e550aae42.png)
 
+Import the class for `Citation`.
 
 ## TreeStat
 
