@@ -161,7 +161,20 @@ public class F84 extends SubstitutionModel.Base {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/52638982/228111029-8f3ac4fb-b6ef-42fa-ba7c-c7031da18a53.png)
+Click on 
+
+![image](https://user-images.githubusercontent.com/52638982/228111587-bcfce93a-c5db-4722-9f11-563de7bd509d.png)
+
+Select the error to declare `F84` and click on the light bulb `Show Quick Fixes`.
+
+![image](https://user-images.githubusercontent.com/52638982/228112101-372b59f1-e973-4b72-946f-0147dce7b196.png)
+
+
+
+![image](https://user-images.githubusercontent.com/52638982/228112241-7c5f91ff-d1f3-4b2c-9600-b72c453f1700.png)
+
+![image](https://user-images.githubusercontent.com/52638982/228112321-7b7b7c32-2b9d-4189-84f1-51c673adb934.png)
+
 
 
 ## TreeStat
