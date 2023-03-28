@@ -105,6 +105,10 @@ Add a `Module Dependency` for `beast2` and the BeastFX library, setting `Scope` 
 
 ![image](https://user-images.githubusercontent.com/52638982/220793088-12622f77-4fcc-486a-8c9a-dff8f1236d5c.png)
 
+For MyPackage, add `Module Dependency` for both the `beast2` and `BeastFX`.
+
+![image](https://user-images.githubusercontent.com/52638982/228100669-f6e8603b-0614-41ed-aae4-759176770510.png)
+
 ## Beauti debug
 
 In the `Project` tab, navigate to `BeastFX > src > beastfx.app > beauti` and select `Beauti`.
