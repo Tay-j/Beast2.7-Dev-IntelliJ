@@ -131,6 +131,12 @@ To run `Beast2`, `Run > Debug > BeastMCMC`.
 
 Alternatively, use the same debug configuration for `BeastMain`, which will bring up a window where an xml file can be selected. 
 
+## Implementing a new substitution model
+
+We are implementing the F84 substitution model.
+
+
+
 ## TreeStat
 
 In this next step we will run a beast2 package, treestat2, that is deployed through a a graphical user interface from the applauncher.
