@@ -151,6 +151,18 @@ Right click `beast.base.evolution.substitutionmodel` and create a new `Java Clas
 
 ![image](https://user-images.githubusercontent.com/52638982/228110323-6408a516-959c-46cf-80c9-304800e73d72.png)
 
+Open the `F84.java` class.
+
+Add `extends SubstitutionModel.Base` after `F84`.
+
+```
+public class F84 extends SubstitutionModel.Base {
+
+}
+```
+
+![image](https://user-images.githubusercontent.com/52638982/228111029-8f3ac4fb-b6ef-42fa-ba7c-c7031da18a53.png)
+
 
 ## TreeStat
 
