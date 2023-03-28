@@ -157,7 +157,7 @@ Import the TreeStat2 module and add the beast2 and BeastFX modules as depedencie
 
 `File > Project Structure > Modules > + > Import Module > TreeStat2`
 
-![image](https://user-images.githubusercontent.com/52638982/227849975-bceb9245-274c-4576-8e69-c5aadf84a061.png)
+![image](https://user-images.githubusercontent.com/52638982/228100866-6c7f7cb2-c82e-4e05-9f11-a505ba3745ba.png)
 
 Create a debug configuration for TreeStat2.
 
