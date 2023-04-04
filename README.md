@@ -282,6 +282,20 @@ Import the `Description` class from `beast.base.core`.
 
 Import the class for `Citation`.
 
+Create a new `File` in `MyPackage` called `version.xml` and copy the following lines.
+
+```
+<package name="MyPackage" version="0.0.1">
+    <depends on='BEAST.base' atleast='2.7.0'/>
+    <depends on='BEAST.app' atleast='2.7.0'/>
+
+    <service type="beast.base.core.BEASTInterface">
+        <provider classname="beast.base.evolution.substitutionmodel.F84"/>
+    </service>
+
+</package>  
+```
+
 ## TreeStat
 
 In this next step we will run a beast2 package, treestat2, that is deployed through a a graphical user interface from the applauncher.
