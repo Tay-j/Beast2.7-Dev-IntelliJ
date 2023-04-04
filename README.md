@@ -296,6 +296,12 @@ Create a new `File` in `MyPackage` called `version.xml` and copy the following l
 </package>  
 ```
 
+Right click `BeastMain` under `BeastFX > src > beastfx.app > beast > BeastMain` to `Modify Run Configuration`.
+
+Set the classpath to `-cp MyPackage`.
+
+Add the following snippet to program arguments in debug: `examples/F84.xml -version_file version.xml`
+
 ## TreeStat
 
 In this next step we will run a beast2 package, treestat2, that is deployed through a a graphical user interface from the applauncher.
