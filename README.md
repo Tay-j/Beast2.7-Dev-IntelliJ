@@ -199,7 +199,6 @@ The following declarations should have been added.
 
 ```
 import beast.base.core.Input;
-import beast.base.core.Input.Validate;
 import beast.base.inference.parameter.RealParameter;
 ```
 
