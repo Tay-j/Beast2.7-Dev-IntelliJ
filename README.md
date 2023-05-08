@@ -13,7 +13,7 @@ Azul JDK 17 (Java 17)
 
 https://www.azul.com/downloads/?version=java-17-lts&package=jdk-fx
 
-This tutorial was set up using version 17.0.6. Versions 17.0.4 and 17.0.5 did not work and are not recommended.
+This tutorial was set up using zulu17.42.19-ca-fx-jdk17.0.7-linux_x64. Versions 17.0.4 and 17.0.5 did not work and are not recommended.
 
 IntelliJ IDE (Community Edition)
 
@@ -288,11 +288,48 @@ Create a new `File` in `MyPackage` called `version.xml` and copy the following l
     <depends on='BEAST.base' atleast='2.7.0'/>
     <depends on='BEAST.app' atleast='2.7.0'/>
 
-    <service type="beast.base.core.BEASTInterface">
-        <provider classname="beast.base.evolution.substitutionmodel.F84"/>
+    <service type="beast.base.evolution.datatype.DataType">
+        <provider classname="beast.base.evolution.datatype.Nucleotide"/>
     </service>
 
-</package>  
+    <service type="beast.base.core.BEASTInterface">
+        <provider classname="beast.base.evolution.substitutionmodel.F84"/>
+        <provider classname="beast.base.evolution.alignment.Alignment"/>
+        <provider classname="beast.base.evolution.alignment.Sequence"/>
+        
+        <provider classname="beast.base.evolution.datatype.Nucleotide"/>
+        
+        <provider classname="beast.base.evolution.sitemodel.SiteModel"/>
+
+
+
+        <provider classname="beast.base.evolution.tree.Tree"/>
+        <provider classname="beast.base.evolution.tree.TreeHeightLogger"/>
+        <provider classname="beast.base.evolution.tree.TreeParser"/>
+
+        <provider classname="beast.base.evolution.tree.coalescent.ConstantPopulation"/>
+        <provider classname="beast.base.evolution.tree.coalescent.RandomTree"/>
+        
+        <provider classname="beast.base.inference.Logger"/>
+        <provider classname="beast.base.inference.CompoundDistribution"/>
+        <provider classname="beast.base.inference.MCMC"/>
+        <provider classname="beast.base.inference.Operator"/>
+        <provider classname="beast.base.inference.parameter.RealParameter"/>
+        <provider classname="beast.base.inference.distribution.Prior"/>
+        <provider classname="beast.base.inference.distribution.OneOnX"/>
+        <provider classname="beast.base.inference.util.ESS"/>
+
+        <provider classname="beast.base.evolution.likelihood.TreeLikelihood"/>]
+
+        <provider classname="beast.base.evolution.operator.ScaleOperator"/>
+        <provider classname="beast.base.evolution.operator.SubtreeSlide"/>
+        <provider classname="beast.base.evolution.operator.Uniform"/>
+        <provider classname="beast.base.evolution.operator.Exchange"/>
+        <provider classname="beast.base.evolution.operator.WilsonBalding"/>
+
+        <provider classname="beast.base.evolution.substitutionmodel.Frequencies"/>    
+    </service>
+</package>
 ```
 
 Right click `BeastMain` under `BeastFX > src > beastfx.app > beast > BeastMain` to `Modify Run Configuration`.
