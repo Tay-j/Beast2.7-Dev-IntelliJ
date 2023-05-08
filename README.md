@@ -3,7 +3,7 @@ Developer tutorial for Beast 2.7.x using IntelliJ
 
 ## Required software
 
-Create a directory for IntelliJ dev and clone BEAST2 and BEASTFX.
+Create a directory for IntelliJ dev and get BEAST2 and BEASTFX v2.7.3.
 ```
 mkdir ~/intellij
 cd ~/intellij
