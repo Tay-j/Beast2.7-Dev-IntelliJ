@@ -15,8 +15,6 @@ unzip b3f7bb03bcfc097b25a55a40635df70433a42850.zip
 mv BeastFX-b3f7bb03bcfc097b25a55a40635df70433a42850/ BeastFX
 ```
 
-https://github.com/CompEvol/BeastFX/tree/b3f7bb03bcfc097b25a55a40635df70433a42850
-
 Azul JDK 17 (Java 17)
 
 https://www.azul.com/downloads/?version=java-17-lts&package=jdk-fx
