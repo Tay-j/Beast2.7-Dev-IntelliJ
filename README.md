@@ -8,11 +8,11 @@ Create a directory for IntelliJ dev and get BEAST2 and BEASTFX v2.7.3.
 mkdir ~/intellij
 cd ~/intellij
 wget https://github.com/CompEvol/beast2/archive/refs/tags/v2.7.3.tar.gz
-wget https://github.com/CompEvol/BeastFX/archive/b3f7bb03bcfc097b25a55a40635df70433a42850.zip
+wget https://github.com/CompEvol/BeastFX/archive/f572041b347d8f21af48b2b750cce9e02b119eb9.zip
 tar -xvzf v2.7.3.tar.gz
 mv beast2-2.7.3 beast2
-unzip b3f7bb03bcfc097b25a55a40635df70433a42850.zip
-mv BeastFX-b3f7bb03bcfc097b25a55a40635df70433a42850/ BeastFX
+unzip f572041b347d8f21af48b2b750cce9e02b119eb9.zip
+mv BeastFX-f572041b347d8f21af48b2b750cce9e02b119eb9/ BeastFX
 ```
 
 Azul JDK 17 (Java 17)
