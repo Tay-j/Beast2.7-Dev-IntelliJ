@@ -325,7 +325,7 @@ Create a new `File` in `MyPackage` called `version.xml` and copy the following l
         <provider classname="beast.base.inference.distribution.OneOnX"/>
         <provider classname="beast.base.inference.util.ESS"/>
 
-        <provider classname="beast.base.evolution.likelihood.TreeLikelihood"/>]
+        <provider classname="beast.base.evolution.likelihood.TreeLikelihood"/>
 
         <provider classname="beast.base.evolution.operator.ScaleOperator"/>
         <provider classname="beast.base.evolution.operator.SubtreeSlide"/>
