@@ -342,7 +342,7 @@ Right click `BeastMain` under `BeastFX > src > beastfx.app > beast > BeastMain` 
 
 Set the classpath to `-cp MyPackage`.
 
-Add the following snippet to program arguments in debug: `examples/F84.xml -version_file version.xml`
+Add the following snippet to program arguments in debug: `-version_file version.xml examples/F84.xml`
 
 ## TreeStat
 
