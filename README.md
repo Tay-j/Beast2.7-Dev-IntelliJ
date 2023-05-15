@@ -347,7 +347,6 @@ Add the following snippet to program arguments in debug: `-version_file version.
 ## TreeStat
 
 In this next step we will run a beast2 package, treestat2, that is deployed through a a graphical user interface from the applauncher.
-Note that the current version of TreeStat2 does not work with non-Mac devices (pending solution).
 
 ```
 cd ~/intellij
