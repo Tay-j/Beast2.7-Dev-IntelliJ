@@ -343,6 +343,8 @@ Create an `examples` folder in the MyPackage directory.
 
 Copy the `testHKY.xml` from the examples folder from `beast2`.
 
+Right click the file and select `Refactor > Rename` and rename the file to `testF84.xml`
+
 Click the file and select `Edit > Find > Replace in Files`, then select `Scope` and set it to `Current File`.
 
 Replace all instances of `HKY` with `F84`, the replaces all instances of `kappa` with `kF84`.
@@ -353,7 +355,7 @@ Right click `BeastMain` under `BeastFX > src > beastfx.app > beast > BeastMain` 
 
 Set the classpath to `-cp MyPackage`.
 
-Add the following snippet to program arguments in debug: `-version_file version.xml examples/F84.xml`
+Add the following snippet to program arguments in debug: `-version_file version.xml examples/testF84.xml`
 
 
 ### Create an fxtemplate for beauti
