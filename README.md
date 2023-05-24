@@ -358,7 +358,7 @@ Set the classpath to `-cp MyPackage`.
 Add the following snippet to program arguments in debug: `-version_file version.xml examples/testF84.xml`
 
 
-### Create an fxtemplate for beauti
+### Create an fxtemplate for beauti - Currently Unimplemented (skip to TreeStat section)
 Create a folder called `fxtemplates` in the MyPackage directory.
 
 Inside the folder, create an xml file called `F84-beauti-template.xml` copying in the following contents.
