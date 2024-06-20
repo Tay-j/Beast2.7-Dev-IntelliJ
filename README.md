@@ -19,7 +19,7 @@ Azul JDK 17 (Java 17)
 
 https://www.azul.com/downloads/?version=java-17-lts&package=jdk-fx
 
-This tutorial was set up using zulu17.42.19-ca-fx-jdk17.0.7-linux_x64. Versions 17.0.4 and 17.0.5 did not work and are not recommended.
+This tutorial was set up using zulu17.50.19-ca-fx-jdk17.0.11. Versions 17.0.4 and 17.0.5 did not work and are not recommended.
 
 IntelliJ IDE (Community Edition)
 
