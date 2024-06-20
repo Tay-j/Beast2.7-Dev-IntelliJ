@@ -3,16 +3,16 @@ Developer tutorial for Beast 2.7.x using IntelliJ
 
 ## Required software
 
-Create a directory for IntelliJ dev and get BEAST2 and BEASTFX v2.7.3.
+Create a directory for IntelliJ dev and get BEAST2 and BEASTFX v2.7.6.
 ```
 mkdir ~/intellij
 cd ~/intellij
-wget https://github.com/CompEvol/beast2/archive/refs/tags/v2.7.3.tar.gz
-wget https://github.com/CompEvol/BeastFX/archive/f572041b347d8f21af48b2b750cce9e02b119eb9.zip
-tar -xvzf v2.7.3.tar.gz
-mv beast2-2.7.3 beast2
-unzip f572041b347d8f21af48b2b750cce9e02b119eb9.zip
-mv BeastFX-f572041b347d8f21af48b2b750cce9e02b119eb9/ BeastFX
+wget https://github.com/CompEvol/beast2/archive/refs/tags/v2.7.6.tar.gz
+wget https://github.com/CompEvol/BeastFX/archive/refs/heads/master.zip
+tar -xvzf v2.7.6.tar.gz
+mv beast2-2.7.6 beast2
+unzip master.zip
+mv BeastFX-master/ BeastFX
 ```
 
 Azul JDK 17 (Java 17)
