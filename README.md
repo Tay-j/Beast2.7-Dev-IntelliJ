@@ -25,6 +25,10 @@ IntelliJ IDE (Community Edition)
 
 https://www.jetbrains.com/idea/download/
 
+Apache Ant(TM) version 1.10.12
+
+https://ant.apache.org/
+
 ## Create Project
 `File > New > Project`
 
@@ -422,3 +426,160 @@ Create a debug configuration for TreeStat2.
 ![image](https://user-images.githubusercontent.com/52638982/223002719-37a5b7db-7a48-4949-9114-19607a337ad1.png)
 
 To run `TreeStat2`, `Run > Debug > TreeStatApp`.
+
+## Compiling the Package
+
+To test the package for release, we use ant to compile it.
+
+First, you need build.xml in the MyPackage directory with the following script.
+```
+<!-- Build F84 model -->
+<project basedir="." default="build_jar_all_F84" name="BUILD_F84">
+    <description>
+        Build F84.
+        JUnit test is available for this build.
+        $Id: build_F84.xml $
+    </description>
+    <!-- set global properties for this build -->
+    <property name="srcF84" location="src" />
+    <property name="buildF84" location="build" />
+    <property name="libF84" location="lib" />
+    <property name="release_dir" value="release" />
+    <property name="distF84" location="${buildF84}/dist" />
+    <property name="beast2path" location="../beast2" />
+    <property name="libBeast2" location="${beast2path}/lib" />
+    <property name="srcBeast2" location="${beast2path}/src" />
+    <property name="beast2classpath" location="${beast2path}/build" />
+    <property name="Package_dir" value="${release_dir}/package" />
+    <import file="${beast2path}/build.xml" />
+    <property name="main_class_BEAST" value="beast.app.BeastMCMC" />
+    <property name="report" value="${buildF84}/junitreport"/>
+    <path id="classpath">
+        <pathelement path="${buildF84}"/>
+        <fileset dir="${libBeast2}" includes="junit-4.8.2.jar"/>
+        <pathelement path="${beast2classpath}"/>
+    </path>
+    <!-- start -->
+    <target name="initF84">
+        <echo message="${ant.project.name}: ${ant.file}" />
+    </target>
+    <target name="cleanF84">
+        <delete dir="${buildF84}" />
+    </target>
+
+    <!-- clean previous build, and then compile Java source code, and Juint test -->
+    <target name="build_all_F84" depends="cleanF84,compile-allF84,junitF84" description="Clean and Build all run-time stuff">
+    </target>
+
+    <!-- clean previous build, compile Java source code, and Junit test, and make the beast.jar and beauti.jar -->
+    <target name="build_jar_all_F84" depends="cleanF84,compile-allF84,junitF84" description="Clean and Build all run-time stuff">
+    </target>
+
+    <!-- No JUnit Test, clean previous build, compile Java source code, and make the F84.jar and beauti.jar -->
+    <target name="build_jar_all_F84_NoJUnitTest" depends="cleanF84,compile-allF84" description="Clean and Build all run-time stuff">
+    </target>
+
+    <!-- compile Java source code -->
+    <target name="compile-allF84" depends="initF84,compile-all">
+        <!-- Capture the path as a delimited property using the refid attribute -->
+        <property name="myclasspath" refid="classpath"/>
+        <!-- Emit the property to the ant console -->
+        <echo message="Classpath = ${myclasspath}"/>
+        <mkdir dir="${buildF84}" />
+        <!-- Compile the java code from ${srcF84} into ${buildF84} /bin -->
+        <javac srcdir="${srcF84}" destdir="${buildF84}" classpathref="classpath" fork="true" memoryinitialsize="256m" memorymaximumsize="256m">
+            <include name="mypackage/**/**" />
+            <!-- compile JUnit test classes -->
+            <include name="test/mypackage/**" />
+        </javac>
+        <echo message="Successfully compiled." />
+    </target>
+
+
+    <jar jarfile="${distF84}/F84.src.jar">
+        <fileset dir="${srcF84}">
+            <include name="mypackage/**/*.java" />
+            <include name="mypackage/**/*.png" />
+            <include name="mypackage/**/*.xsl" />
+        </fileset>
+    </jar>
+    <jar jarfile="${dist}/F84.package.jar">
+        <manifest>
+            <attribute name="Built-By" value="${user.name}" />
+        </manifest>
+        <fileset dir="${buildF84}">
+            <include name="mypackage/**/*.class" />
+            <include name="mypackage/**/*.png" />
+            <include name="mypackage/**/*.properties" />
+        </fileset>
+    </jar>
+
+
+    <!-- run beast.jar -->
+    <target name="run_F84">
+        <java jar="${distF84}/F84.jar" fork="true" />
+    </target>
+
+    <!-- JUnit test -->
+    <target name="junitF84">
+        <mkdir dir="${report}" />
+        <junit printsummary="yes"> <!--showoutput='yes'-->
+            <classpath>
+                <path refid="classpath" />
+                <path location="${buildF84}" />
+            </classpath>
+            <formatter type="xml" />
+            <batchtest fork="yes" todir="${report}">
+                <fileset dir="${srcF84}">
+                    <include name="test/**/*Test.java"/>
+                </fileset>
+                <fileset dir="${srcBeast2}">
+                    <include name="test/beast/integration/**/*Test.java"/>
+                    <exclude name="test/beast/integration/**/ResumeTest.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <echo message="JUnit test finished." />
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${report}">
+            <fileset dir="${report}" includes="*.xml"/>
+            <report format="frames" todir="${report}"/>
+        </junitreport>
+        <echo message="JUnit test report finished." />
+    </target>
+    <target name="package"
+            depends="build_jar_all_F84_NoJUnitTest"
+            description="release BEAST 2 package version of F84">
+        <delete dir="${Package_dir}" />
+        <!-- Create the release directory -->
+        <mkdir dir="${Package_dir}" />
+        <mkdir dir="${Package_dir}/lib" />
+        <mkdir dir="${Package_dir}/fxtemplates" />
+        <copy todir="${Package_dir}/lib">
+            <fileset dir="${dist}" includes="F84.package.jar" />
+        </copy>
+        <copy todir="${Package_dir}">
+            <fileset dir="${dist}" includes="F84.src.jar" />
+        </copy>
+        <copy todir="${Package_dir}/fxtemplates">
+            <fileset file="fxtemplates/F84-beauti-template.xml" />
+        </copy>
+        <jar jarfile="${dist}/F84.package.zip">
+            <fileset dir="${Package_dir}">
+                <include name="**/*" />
+            </fileset>
+        </jar>
+        <echo message="Package version release is finished." />
+    </target>
+</project>
+```
+
+Now, you can compile by running the following lines in the MyPackage directory.
+```
+ant package
+```
+
+The package can be found in the directory: /beast2/build/dist/F84.package.zip.
+
+Unzipping in ~/.beast/2.7/ allows the package to be deployed in BEAST2.
