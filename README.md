@@ -431,7 +431,7 @@ To run `TreeStat2`, `Run > Debug > TreeStatApp`.
 
 To test the package for release, we use ant to compile it.
 
-First, you need build.xml in the MyPackage directory with the following script.
+First, you need to create a build.xml file in the MyPackage directory with the following script.
 ```
 <!-- Build F84 model -->
 <project basedir="." default="build_jar_all_F84" name="BUILD_F84">
@@ -582,4 +582,4 @@ ant package
 
 The package can be found in the directory: /beast2/build/dist/F84.package.zip.
 
-Unzipping in ~/.beast/2.7/ allows the package to be deployed in BEAST2.
+Unzipping the package in ~/.beast/2.7/ allows it to be deployed in BEAST2.
