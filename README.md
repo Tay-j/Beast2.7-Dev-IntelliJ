@@ -8,10 +8,10 @@ Create a directory for IntelliJ dev and get BEAST2 and BEASTFX v2.7.6.
 mkdir ~/intellij
 cd ~/intellij
 wget https://github.com/CompEvol/beast2/archive/refs/tags/v2.7.6.tar.gz
-wget https://github.com/CompEvol/BeastFX/archive/refs/heads/master.zip
+wget https://github.com/CompEvol/BeastFX/archive/642508e76f24a87ce38383d2fb57036a18f219ee.zip
 tar -xvzf v2.7.6.tar.gz
 mv beast2-2.7.6 beast2
-unzip master.zip
+unzip 642508e76f24a87ce38383d2fb57036a18f219ee.zip
 mv BeastFX-master/ BeastFX
 ```
 
