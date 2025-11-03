@@ -7,12 +7,13 @@ Create a directory for IntelliJ dev and get BEAST2 and BEASTFX v2.7.6.
 ```
 mkdir ~/intellij
 cd ~/intellij
-wget https://github.com/CompEvol/beast2/archive/refs/tags/v2.7.6.tar.gz
-wget https://github.com/CompEvol/BeastFX/archive/642508e76f24a87ce38383d2fb57036a18f219ee.zip
-tar -xvzf v2.7.6.tar.gz
-mv beast2-2.7.6 beast2
-unzip 642508e76f24a87ce38383d2fb57036a18f219ee.zip
-mv BeastFX-master/ BeastFX
+git clone https://github.com/CompEvol/beast2/
+cd beast2
+git checkout v2.7.6
+cd ..
+git clone https://github.com/CompEvol/BeastFX/
+cd BeastFx
+git checkout 642508e76f24a87ce38383d2fb57036a18f219ee
 ```
 
 Azul JDK 17 (Java 17)
@@ -298,46 +299,8 @@ Create a new `File` in `MyPackage` called `version.xml` and copy the following l
     <depends on='BEAST.base' atleast='2.7.0'/>
     <depends on='BEAST.app' atleast='2.7.0'/>
 
-    <service type="beast.base.evolution.datatype.DataType">
-        <provider classname="beast.base.evolution.datatype.Nucleotide"/>
-    </service>
-
     <service type="beast.base.core.BEASTInterface">
         <provider classname="beast.base.evolution.substitutionmodel.F84"/>
-        <provider classname="beast.base.evolution.alignment.Alignment"/>
-        <provider classname="beast.base.evolution.alignment.Sequence"/>
-        
-        <provider classname="beast.base.evolution.datatype.Nucleotide"/>
-        
-        <provider classname="beast.base.evolution.sitemodel.SiteModel"/>
-
-
-
-        <provider classname="beast.base.evolution.tree.Tree"/>
-        <provider classname="beast.base.evolution.tree.TreeHeightLogger"/>
-        <provider classname="beast.base.evolution.tree.TreeParser"/>
-
-        <provider classname="beast.base.evolution.tree.coalescent.ConstantPopulation"/>
-        <provider classname="beast.base.evolution.tree.coalescent.RandomTree"/>
-        
-        <provider classname="beast.base.inference.Logger"/>
-        <provider classname="beast.base.inference.CompoundDistribution"/>
-        <provider classname="beast.base.inference.MCMC"/>
-        <provider classname="beast.base.inference.Operator"/>
-        <provider classname="beast.base.inference.parameter.RealParameter"/>
-        <provider classname="beast.base.inference.distribution.Prior"/>
-        <provider classname="beast.base.inference.distribution.OneOnX"/>
-        <provider classname="beast.base.inference.util.ESS"/>
-
-        <provider classname="beast.base.evolution.likelihood.TreeLikelihood"/>
-
-        <provider classname="beast.base.evolution.operator.ScaleOperator"/>
-        <provider classname="beast.base.evolution.operator.SubtreeSlide"/>
-        <provider classname="beast.base.evolution.operator.Uniform"/>
-        <provider classname="beast.base.evolution.operator.Exchange"/>
-        <provider classname="beast.base.evolution.operator.WilsonBalding"/>
-
-        <provider classname="beast.base.evolution.substitutionmodel.Frequencies"/>    
     </service>
 </package>
 ```
